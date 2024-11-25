@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    background-color: rgb(224, 232, 255);
+    font-family: 'Red Hat Display';
+    padding: 0 24px;
+}
+
+main {
+    max-width: 450px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.top-section img {
+    width: 100%;
+}
+
+.bottom-section {
+    padding: 32px 48px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    color: rgb(31, 46, 85);
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+    color: rgb(113, 127, 166);
+    font-weight: 500;
+}
+
+.payment {
+    margin: 24px 0 32px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(247, 249, 255);
+    border-radius: 11px;
+    padding: 24px;
+}
+
+.icon-and-plan {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 20px;
+}
+
+.annual {
+    font-weight: 900;
+    color: rgb(31, 46, 85);
+}
+
+.change {
+    color: rgb(56, 42, 225);
+    font-size: 14px;
+    text-decoration: underline;
+    font-weight: 900;
+    transition: 0.15s;
+}
+
+button {
+    width: 100%;
+    background-color: rgb(56, 42, 225);
+    color: white;
+    border-style: none;
+    border-radius: 11px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0px 15px 15px rgba(56, 42, 225, 20%);
+    margin-bottom: 20px;
+    transition: 0.15s;
+}
+
+.cancel {
+    display: flex;
+    justify-content: center;
+}
+
+.cancel p {
+    font-weight: bold;
+    transition: 0.15s;
+}
+
+button:hover {
+    background-color: rgb(118, 108, 241);
+    cursor: pointer;
+}
+
+.change:hover {
+    color: rgb(118, 108, 241);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cancel p:hover {
+    color: rgb(31, 46, 85);
+    cursor: pointer;
+}
+
+@media (min-width: 381px) and (max-width: 435px) {
+
+    .payment p {
+        font-size: 14px;
+    }
+
+    .change {
+        font-size: 12px;
+    }
+
+    .payment {
+        padding: 12px;
+    }
+  }
+
+@media screen and (max-width: 380px) {
+
+    .icon {
+        max-width: 30px;
+        margin-right: 10px;
+    }
+
+    .payment p {
+        font-size: 10px;
+    }
+
+    .change {
+        font-size: 10px;
+    }
+
+    .payment {
+        padding: 10px;
+    }
+  }
